@@ -1,0 +1,8 @@
+@mixin box-shadow() {
+    box-shadow: 0 0 10px rgba(black, 0.1);
+}
+
+@mixin size($width, $height) {
+    width: $width * 1px;
+    height: $height * 1px;
+}
