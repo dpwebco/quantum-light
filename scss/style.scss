@@ -1,0 +1,302 @@
+@import "vars";
+@import "mixins";
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    margin: 100px auto 0 auto;
+    position: relative;
+}
+
+input {
+    border:none;
+}
+
+body {
+    font-family:"Roboto", sans-serif;
+    background-color: #fafafa;
+}
+
+.todo-list {
+    width: 360px;
+    height: 729px;
+    position: relative;
+    float: left;
+    padding: 0 0 20px 0;
+    margin: 0 30px 50px 0;
+
+    background-color: #ffffff;
+    font-weight: $fw-bold;
+
+    @include box-shadow();
+
+    .todos-list {
+        list-style-type: none;
+        margin: 39px 0 0 0;
+        padding: 0 20px;
+    }
+
+    .list-item {
+        border: 2px solid $base-border-color;
+        padding: 20px;
+        width: 100%;
+        display: inline-block;
+        margin: 0 0 10px 0;
+
+        .text {
+            font-size: 13px;
+            font-weight: $fw-medium;
+            line-height: 20px;
+            display: inline-block;
+        }
+
+        .cancel {
+            font-size: 10px;
+            text-transform: uppercase;
+            line-height: 40px;
+            color: #b3b3b3;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+    }
+
+    .info {
+        .user-avatar {
+            @include size(30, 30);
+            background-color: #cccccc;
+            border-radius: 15px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .user-name {
+            font-size: 12px;
+            font-weight: $fw-bold;
+            line-height: 30px;
+            float: left;
+        }
+
+        .date-time {
+            position: relative;
+            left: 50px;
+            top: 5px;
+        }
+
+        .date-text {
+            font-size: 12px;
+            font-weight: $fw-medium;
+        }
+
+        .icon {
+            display: inline-block;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .date-icon {
+            background: url(../img/date-icon.png) no-repeat;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.task-comment {
+    @include size(556, 601);
+    @include box-shadow();
+
+    background-color: #fff;
+
+    position: absolute;
+    top: 760px;
+    left: 585px;
+}
+.widget-title {
+    font-weight: $fw-medium;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #666;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid $base-border-color;
+    padding: 38px 30px;
+}
+
+.new-task-btn {
+    @include size(106, 40);
+    border: 2px solid $base-border-color;
+
+    position: absolute;
+    right: 20px;
+    top: floor((89px - 40px) / 2);
+
+    font-size: 10px;
+    color: $md-text-color;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    line-height: 40px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+input {
+    position: relative;
+
+    margin: 0 0 10px 0;
+    &::-webkit-input-placeholder {
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+}
+
+.clear {
+    clear: both;
+}
+.add-task-btn,
+.open-modal-btn {
+    @include size(70, 40);
+
+    background-color: $add-new-task-btn-bg;
+    border-radius: 4px;
+
+    font-size: 10px;
+    font-weight: $fw-black;
+
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+
+    float: left;
+    margin: 0 34px 0 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.muted-text {
+    color: #666;
+}
+
+.modal-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    z-index: 2;
+    opacity: .6;
+}
+
+.test-modal-body {
+    width: 550px;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 3;
+    left: (1170px - 550px) / 2;
+}
+
+.new-task-dialog {
+    @include size(556, 961);
+    @include box-shadow();
+
+    background-color: #fff;
+    position: absolute;
+    top: 760px;
+
+    margin-bottom: 199px;
+}
+
+.close-btn {
+    width: 84px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 4px;
+
+    font-size: 10px;
+    font-weight: $fw-black;
+
+    text-transform: uppercase;
+
+    color: #b2b2b2;
+    text-align: center;
+    line-height: 40px;
+
+    border: 2px solid $base-border-color;
+
+    position: absolute;
+    right: 30px;
+    top: (89px - 40px) / 2;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.comment-card {
+    width: 556px;
+    height: 331px;
+    left: 585px;
+    top: 1388px;
+    background-color: #fff;
+
+    @include box-shadow();
+
+    position: absolute;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.new-task-form {
+    padding: 0 30px;
+    margin-top: 30px;
+
+    .task-name-input {
+        border: 2px solid $base-border-color;
+        height: 50px;
+        text-indent: 30px;
+    }
+}
+
+.card-footer {
+    background-color: #fff;
+    width: 100%;
+    height: 90px;
+    border-top: 1px solid $base-border-color;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 90px;
+    font-size: 12px;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+    color: #b3b3b3;
+
+    &.tc-footer {
+        background-color: #fafafa;
+    } 
+}
+
+.new-task-form {
+    padding: 0 30px;
+    margin-top: 30px;
+
+    .task-name-input {
+        border: 2px solid $base-border-color;
+        height: 50px;
+        text-indent: 30px;
+    }
+}
