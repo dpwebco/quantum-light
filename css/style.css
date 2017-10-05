@@ -192,12 +192,35 @@ input {
 .comment-card {
   width: 556px;
   height: 331px;
-  left: 585px;
-  top: 1388px;
   background-color: #fff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: absolute; }
+  position: absolute;
+  left: 585px;
+  top: 1388px;
+  padding: 30px 0 0 30px; }
+  .comment-card .profile .user-avatar {
+    width: 48px;
+    height: 48px;
+    background-color: #cccccc;
+    border-radius: 50px;
+    float: left;
+    margin: 0 20px 0 0; }
+  .comment-card .profile .user-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666; }
+  .comment-card .profile .time-ago {
+    font-size: 12px;
+    font-weight: 500;
+    color: #b2b2b2; }
+  .comment-card .comment {
+    float: left;
+    width: 414px;
+    color: #999;
+    font-size: 13px;
+    line-height: 30px;
+    margin: 40px 0 0 0; }
 
 .form-control {
   width: 100%; }
