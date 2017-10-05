@@ -15,7 +15,8 @@ class CalendarModal {
         this.modalMaxHeight = 961;
 
 
-        this.transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
+        this.transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd ' +
+                             'msTransitionEnd transitionend';
         this.transitionSupported = ($('.csstransitions').length > 0);
 
         if (!this.transitionSupported)
@@ -53,12 +54,7 @@ class CalendarModal {
         });
 
         _self.singleDate.each(() => {
-            // let durationLabel = '<span class="task-date">' + $(this).data('start') + - '-' +
-            //     $(this).data('end') +'  </span>';
-            // //$(this).children('a').prepend($(durationLabel));
-            // _self.dateLabel.after('' +
-            //     '<span class="task-date">' + $(this).data('start') + '-' + $(this).data('end') + ' </span>'
-            // );zz
+
             _self.singleDate.on('click', 'a', (e) => {
                 e.preventDefault();
 
@@ -77,7 +73,7 @@ class CalendarModal {
             }
         });
 
-        _self.calendarModal.on('click', '.modal-overlay', (event) => {
+        _self.calendarModal.on('click', '.modal-overlay', () => {
             if (!_self.animating && _self.calendarModal.hasClass('is-open'))
                 _self.closeModal(_self.singleDate.find('.selected-date'));
         })
