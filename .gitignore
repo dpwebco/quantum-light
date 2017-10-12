@@ -1,2 +1,14 @@
 .bowerrc
 .idea/
+prepros-6.config
+assets
+css/partials/
+css/style.css.map
+
+
+js/calendar-modal-dist.js
+js/es6-app-dist.js
+
+js/modal-test-dist.js.map
+upgrades.json
+
