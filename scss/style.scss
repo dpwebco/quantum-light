@@ -95,15 +95,15 @@ body {
             float: left;
             margin-right: 10px;
         }
-
-        .date-icon {
-            background: url(../img/date-icon.png) no-repeat;
-            width: 20px;
-            height: 20px;
-        }
     }
 }
 
+.date-icon {
+    background: url(../img/date-icon.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
 .task-comment {
     @include size(556, 601);
     @include box-shadow();
@@ -247,13 +247,47 @@ input {
 .comment-card {
     width: 556px;
     height: 331px;
-    left: 585px;
-    top: 1388px;
     background-color: #fff;
 
     @include box-shadow();
 
     position: absolute;
+    left: 585px;
+    top: 1388px;
+
+    padding: 30px 0 0 30px;
+
+    .profile {
+        .user-avatar {
+            @include size(48, 48);
+            background-color: #cccccc;
+            border-radius: 50px;
+            float: left;
+            margin: 0 20px 0 0;
+        }
+
+        .user-name {
+            font-size: 14px;
+            font-weight: $fw-medium;
+            color: #666;
+
+        }
+
+        .time-ago {
+            font-size: 12px;
+            font-weight: $fw-medium;
+            color: #b2b2b2;
+        }
+    }
+
+    .comment {
+        float: left;
+        width: 414px;
+        color: #999;
+        font-size: 13px;
+        line-height: 30px;
+        margin: 40px 0 0 0;
+    }
 }
 
 .form-control {
@@ -265,12 +299,47 @@ input {
     margin-top: 30px;
 
     .task-name-input {
+        input {
+            border: 2px solid $base-border-color;
+            height: 50px;
+            text-indent: 30px;
+            &::-webkit-input-placeholder {
+                line-height: 50px;
+                font-size: 12px;
+                color: #999;
+            }
+        }
+    }
+
+    .editor {
         border: 2px solid $base-border-color;
-        height: 50px;
-        text-indent: 30px;
+        height: 138px;
+        position: relative;
+        top: 20px;
+        .tool-bar {
+            border-bottom: 1px solid $base-border-color;
+            height: 50px;
+            width: 100%;
+        }
     }
 }
 
+.task-meta {
+    float: left;
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 48px;
+    padding: 0 20px;
+
+    border: {
+        top: 1px solid $base-border-color;
+        bottom: 1px solid $base-border-color;
+    }
+}
+.clear {
+    clear: both;
+}
 .card-footer {
     background-color: #fff;
     width: 100%;
@@ -290,13 +359,16 @@ input {
     } 
 }
 
-.new-task-form {
-    padding: 0 30px;
-    margin-top: 30px;
 
-    .task-name-input {
-        border: 2px solid $base-border-color;
-        height: 50px;
-        text-indent: 30px;
-    }
+.cmt-footer {
+    width: calc(100% - 30px);
+}
+
+.todo-app {
+    width: 360px;
+    height: 729px;
+    background-color: #fff;
+    @include box-shadow();
+
+    position: relative;
 }
