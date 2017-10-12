@@ -1,18 +1,22 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .container {
   width: 1170px;
   margin: 100px auto 0 auto;
-  position: relative; }
+  position: relative;
+}
 
 input {
-  border: none; }
+  border: none;
+}
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #fafafa; }
+  background-color: #fafafa;
+}
 
 .todo-list {
   width: 360px;
@@ -24,56 +28,78 @@ body {
   background-color: #ffffff;
   font-weight: 700;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-  .todo-list .todos-list {
-    list-style-type: none;
-    margin: 39px 0 0 0;
-    padding: 0 20px; }
-  .todo-list .list-item {
-    border: 2px solid #f5f5f5;
-    padding: 20px;
-    width: 100%;
-    display: inline-block;
-    margin: 0 0 10px 0; }
-    .todo-list .list-item .text {
-      font-size: 13px;
-      font-weight: 500;
-      line-height: 20px;
-      display: inline-block; }
-    .todo-list .list-item .cancel {
-      font-size: 10px;
-      text-transform: uppercase;
-      line-height: 40px;
-      color: #b3b3b3;
-      text-decoration: none;
-      letter-spacing: 1px; }
-  .todo-list .info .user-avatar {
-    width: 30px;
-    height: 30px;
-    background-color: #cccccc;
-    border-radius: 15px;
-    float: left;
-    margin-right: 20px; }
-  .todo-list .info .user-name {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 30px;
-    float: left; }
-  .todo-list .info .date-time {
-    position: relative;
-    left: 50px;
-    top: 5px; }
-  .todo-list .info .date-text {
-    font-size: 12px;
-    font-weight: 500; }
-  .todo-list .info .icon {
-    display: inline-block;
-    float: left;
-    margin-right: 10px; }
-  .todo-list .info .date-icon {
-    background: url(../img/date-icon.png) no-repeat;
-    width: 20px;
-    height: 20px; }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list .todos-list {
+  list-style-type: none;
+  margin: 39px 0 0 0;
+  padding: 0 20px;
+}
+
+.todo-list .list-item {
+  border: 2px solid #f5f5f5;
+  padding: 20px;
+  width: 100%;
+  display: inline-block;
+  margin: 0 0 10px 0;
+}
+
+.todo-list .list-item .text {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  display: inline-block;
+}
+
+.todo-list .list-item .cancel {
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: 40px;
+  color: #b3b3b3;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.todo-list .info .user-avatar {
+  width: 30px;
+  height: 30px;
+  background-color: #cccccc;
+  border-radius: 15px;
+  float: left;
+  margin-right: 20px;
+}
+
+.todo-list .info .user-name {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 30px;
+  float: left;
+}
+
+.todo-list .info .date-time {
+  position: relative;
+  left: 50px;
+  top: 5px;
+}
+
+.todo-list .info .date-text {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.todo-list .info .icon {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+
+.date-icon {
+  background: url(../img/date-icon.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  float: left;
+}
 
 .task-comment {
   width: 556px;
@@ -83,19 +109,22 @@ body {
   background-color: #fff;
   position: absolute;
   top: 760px;
-  left: 585px; }
+  left: 585px;
+}
 
 .widget-title {
   font-weight: 500;
   font-size: 16px;
   text-transform: capitalize;
-  color: #666; }
+  color: #666;
+}
 
 .header {
   width: 100%;
   height: 90px;
   border-bottom: 1px solid #f5f5f5;
-  padding: 38px 30px; }
+  padding: 38px 30px;
+}
 
 .new-task-btn {
   width: 106px;
@@ -108,19 +137,26 @@ body {
   color: #b2b2b2;
   text-transform: uppercase;
   text-align: center;
-  line-height: 40px; }
-  .new-task-btn:hover {
-    cursor: pointer; }
+  line-height: 40px;
+}
+
+.new-task-btn:hover {
+  cursor: pointer;
+}
 
 input {
   position: relative;
-  margin: 0 0 10px 0; }
-  input::-webkit-input-placeholder {
-    text-transform: capitalize;
-    font-weight: bold; }
+  margin: 0 0 10px 0;
+}
+
+input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  font-weight: bold;
+}
 
 .clear {
-  clear: both; }
+  clear: both;
+}
 
 .add-task-btn,
 .open-modal-btn {
@@ -135,13 +171,17 @@ input {
   text-align: center;
   line-height: 40px;
   float: left;
-  margin: 0 34px 0 0; }
-  .add-task-btn:hover,
-  .open-modal-btn:hover {
-    cursor: pointer; }
+  margin: 0 34px 0 0;
+}
+
+.add-task-btn:hover,
+.open-modal-btn:hover {
+  cursor: pointer;
+}
 
 .muted-text {
-  color: #666; }
+  color: #666;
+}
 
 .modal-overlay {
   position: absolute;
@@ -151,7 +191,8 @@ input {
   bottom: 0;
   background-color: #000;
   z-index: 2;
-  opacity: .6; }
+  opacity: .6;
+}
 
 .test-modal-body {
   width: 550px;
@@ -159,7 +200,8 @@ input {
   background-color: #fff;
   position: absolute;
   z-index: 3;
-  left: 310px; }
+  left: 310px;
+}
 
 .new-task-dialog {
   width: 556px;
@@ -169,7 +211,8 @@ input {
   background-color: #fff;
   position: absolute;
   top: 760px;
-  margin-bottom: 199px; }
+  margin-bottom: 199px;
+}
 
 .close-btn {
   width: 84px;
@@ -185,9 +228,12 @@ input {
   border: 2px solid #f5f5f5;
   position: absolute;
   right: 30px;
-  top: 24.5px; }
-  .close-btn:hover {
-    cursor: pointer; }
+  top: 24.5px;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+}
 
 .comment-card {
   width: 556px;
@@ -198,40 +244,87 @@ input {
   position: absolute;
   left: 585px;
   top: 1388px;
-  padding: 30px 0 0 30px; }
-  .comment-card .profile .user-avatar {
-    width: 48px;
-    height: 48px;
-    background-color: #cccccc;
-    border-radius: 50px;
-    float: left;
-    margin: 0 20px 0 0; }
-  .comment-card .profile .user-name {
-    font-size: 14px;
-    font-weight: 500;
-    color: #666; }
-  .comment-card .profile .time-ago {
-    font-size: 12px;
-    font-weight: 500;
-    color: #b2b2b2; }
-  .comment-card .comment {
-    float: left;
-    width: 414px;
-    color: #999;
-    font-size: 13px;
-    line-height: 30px;
-    margin: 40px 0 0 0; }
+  padding: 30px 0 0 30px;
+}
+
+.comment-card .profile .user-avatar {
+  width: 48px;
+  height: 48px;
+  background-color: #cccccc;
+  border-radius: 50px;
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+.comment-card .profile .user-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+.comment-card .profile .time-ago {
+  font-size: 12px;
+  font-weight: 500;
+  color: #b2b2b2;
+}
+
+.comment-card .comment {
+  float: left;
+  width: 414px;
+  color: #999;
+  font-size: 13px;
+  line-height: 30px;
+  margin: 40px 0 0 0;
+}
 
 .form-control {
-  width: 100%; }
+  width: 100%;
+}
 
 .new-task-form {
   padding: 0 30px;
-  margin-top: 30px; }
-  .new-task-form .task-name-input {
-    border: 2px solid #f5f5f5;
-    height: 50px;
-    text-indent: 30px; }
+  margin-top: 30px;
+}
+
+.new-task-form .task-name-input input {
+  border: 2px solid #f5f5f5;
+  height: 50px;
+  text-indent: 30px;
+}
+
+.new-task-form .task-name-input input::-webkit-input-placeholder {
+  line-height: 50px;
+  font-size: 12px;
+  color: #999;
+}
+
+.new-task-form .editor {
+  border: 2px solid #f5f5f5;
+  height: 138px;
+  position: relative;
+  top: 20px;
+}
+
+.new-task-form .editor .tool-bar {
+  border-bottom: 1px solid #f5f5f5;
+  height: 50px;
+  width: 100%;
+}
+
+.task-meta {
+  float: left;
+  width: 100%;
+  display: block;
+  position: relative;
+  top: 48px;
+  padding: 0 20px;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.clear {
+  clear: both;
+}
 
 .card-footer {
   background-color: #fff;
@@ -245,14 +338,22 @@ input {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #b3b3b3; }
-  .card-footer.tc-footer {
-    background-color: #fafafa; }
+  color: #b3b3b3;
+}
 
-.new-task-form {
-  padding: 0 30px;
-  margin-top: 30px; }
-  .new-task-form .task-name-input {
-    border: 2px solid #f5f5f5;
-    height: 50px;
-    text-indent: 30px; }
+.card-footer.tc-footer {
+  background-color: #fafafa;
+}
+
+.cmt-footer {
+  width: calc(100% - 30px);
+}
+
+.todo-app {
+  width: 360px;
+  height: 729px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
