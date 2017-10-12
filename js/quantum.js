@@ -1,8 +1,9 @@
+import { Todo } from "es6-todo";
 class quantum {
     constructor() {}
 
     initComponents() {
-
+        this.app = new App();
     }
     init() {
         this.cacheDom();
@@ -13,6 +14,8 @@ class quantum {
         this.removeComment();
         this.removeTodo();
         this.removeAll();
+
+        this.todo = new Todo();
 
         this.isOpen = true;
 
@@ -46,11 +49,11 @@ class quantum {
         });
 
         _self.addTaskBtn.on('click', () => {
-
+            Todo.renderModal();
         });
 
         _self.closeNewTaskBtn.on('click', () => {
-
+            Todo.remove();
         });
 
         _self.closeTaskCommentBtn.on('click', () => {
@@ -71,6 +74,10 @@ class quantum {
     removeComment() {}
     removeTodo() {}
     removeAll(id) {}
+
+    initComponents() {
+
+    }
 }
 
 let theme = new quantum();
