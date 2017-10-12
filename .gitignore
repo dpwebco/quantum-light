@@ -12,3 +12,7 @@ js/es6-app-dist.js
 js/modal-test-dist.js.map
 upgrades.json
 
+css/_new-task-modal.css
+js/app.js
+js/es6-app.js
+js/jquery-ui-1.12.1.custom/

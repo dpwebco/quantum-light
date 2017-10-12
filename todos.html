@@ -178,13 +178,32 @@
                 <div class="widget-title muted-text">Create a new Task</div>
                 <div class="close-btn">close</div>
             </div>
+            <form class="new-task-form" method="post" action="php/new-task.php">
+                <div class="task-name-input">
+                    <input type="text" class="form-control" placeholder="Task name">
+                </div>
+                <div class="editor form-control">
+                    <div class="tool-bar"></div>
+                </div>
+            </form>
+
+            <div class="task-meta">
+                <div class="icon">
+                    <div class="date-icon"></div>
+                </div>
+                <div class="time">2:14</div>
+                <div class="date">04 Oct 2017</div>
+                <div class="delete-task-icon"></div>
+            </div>
             <div class="card-footer tc-footer"></div>
+
         </div> <!-- new-task-dialog --->
         <div class="task-comment">
             <div class="header">
                 <div class="widget-title muted-text">Comment on Task</div>
                 <div class="close-btn">close</div>
             </div>
+
             <div class="card-footer tc-footer"></div>
         </div> <!-- task-comment -->
         <div class="comment-card">
@@ -197,7 +216,7 @@
                 Have you ever finally just gave in to the temptation and read your horoscope in the newspaper on Sunday morning? Sure, we all
                 have. For most of us, it’s a curiosity, an amusement to see.
             </p>
-            <div class="card-footer">load more</div>
+            <div class="card-footer cmt-footer">load more</div>
         </div>
     </div>
     <script src="assets/jquery/dist/jquery.min.js"></script>
